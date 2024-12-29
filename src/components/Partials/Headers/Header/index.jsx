@@ -6,6 +6,8 @@ import ThinBag from "../../../Helpers/icons/ThinBag";
 import Middlebar from "./Middlebar";
 import Navbar from "./Navbar";
 import TopBar from "./TopBar";
+import LogoImage from "../../../../../public/assets/images/logo.jpeg";
+
 
 export default function Header({ drawerAction, settings, contact }) {
   const { cart } = useSelector((state) => state.cart);
@@ -45,8 +47,10 @@ export default function Header({ drawerAction, settings, contact }) {
                 {settings && (
                   <Image
                     layout="fill"
+                    width="80"
+                    height="34"
                     objectFit="scale-down"
-                    src={`${process.env.NEXT_PUBLIC_BASE_URL + settings.logo}`}
+                    src={LogoImage}
                     alt="logo"
                   />
                 )}

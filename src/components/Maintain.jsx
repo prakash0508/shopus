@@ -19,7 +19,7 @@ function Maintain() {
               {maintain && (
                 <Image
                   width="153"
-                  height="44"
+                  height="30"
                   objectFit="scale-down"
                   src={`${process.env.NEXT_PUBLIC_BASE_URL + maintain.image}`}
                   alt="logo"

@@ -73,7 +73,7 @@ export default function Middlebar({ className, settings }) {
                   {settings && (
                     <Image
                       width="153"
-                      height="44"
+                      height="34"
                       objectFit="scale-down"
                       src={LogoImage}
                       alt="logo"

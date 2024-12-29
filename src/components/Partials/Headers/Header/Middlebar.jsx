@@ -72,7 +72,7 @@ export default function Middlebar({ className, settings }) {
                 <a rel="noopener noreferrer">
                   {settings && (
                     <Image
-                      width="153"
+                      width="103"
                       height="34"
                       objectFit="scale-down"
                       src={LogoImage}

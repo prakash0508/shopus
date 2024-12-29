@@ -11,6 +11,7 @@ import ThinPeople from "../../../Helpers/icons/ThinPeople";
 import SearchBox from "../../../Helpers/SearchBox";
 import languageModel from "../../../../../utils/languageModel";
 import DefaultUser from "../../../../contexts/DefaultUser";
+import LogoImage from "../../../../../public/assets/images/logo.jpeg";
 export default function Middlebar({ className, settings }) {
   const { websiteSetup } = useSelector((state) => state.websiteSetup);
   const router = useRouter();
@@ -74,9 +75,7 @@ export default function Middlebar({ className, settings }) {
                       width="153"
                       height="44"
                       objectFit="scale-down"
-                      src={`${
-                        process.env.NEXT_PUBLIC_BASE_URL + settings.logo
-                      }`}
+                      src={LogoImage}
                       alt="logo"
                     />
                   )}
